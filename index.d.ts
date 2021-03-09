@@ -1144,7 +1144,7 @@ export interface AWS {
       tracing?: ("Active" | "PassThrough") | boolean;
       versionFunction?: boolean;
       vpc?: {
-        securityGroupIds?: (
+        securityGroupIds?: string | (
           | string
           | (
               | {
@@ -1164,7 +1164,7 @@ export interface AWS {
                 }
             )
         )[];
-        subnetIds?: (
+        subnetIds?: string | (
           | string
           | (
               | {
