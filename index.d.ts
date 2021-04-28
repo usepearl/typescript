@@ -2337,7 +2337,7 @@ export interface AWS {
           };
         }[];
     vpc?: {
-      securityGroupIds?: (
+      securityGroupIds?: string | (
         | string
         | (
             | {
@@ -2357,7 +2357,7 @@ export interface AWS {
               }
           )
       )[];
-      subnetIds?: (
+      subnetIds?: string | (
         | string
         | (
             | {
@@ -2618,7 +2618,7 @@ export interface AwsLambdaEnvironment {
  * via the `definition` "awsLambdaVpcConfig".
  */
 export interface AwsLambdaVpcConfig {
-  securityGroupIds?: (
+  securityGroupIds?: string | (
     | string
     | (
         | {
@@ -2638,7 +2638,7 @@ export interface AwsLambdaVpcConfig {
           }
       )
   )[];
-  subnetIds?: (
+  subnetIds?: string | (
     | string
     | (
         | {
