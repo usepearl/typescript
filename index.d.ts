@@ -2436,12 +2436,6 @@ export interface AWS {
       [k: string]: unknown;
     };
     Resources?: {
-      "Fn::Transform"?: {
-        Name: string;
-        Parameters?: {
-          [k: string]: unknown;
-        };
-      };
       /**
        * This interface was referenced by `undefined`'s JSON-Schema definition
        * via the `patternProperty` "^[a-zA-Z0-9]{1,255}$".
